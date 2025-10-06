@@ -5,6 +5,7 @@ services:
     build: .
     container_name: historial-asesorias
     ports:
-      - "8005:8000"
+      - "8005:8005"
     env_file:
       - .env
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8005
