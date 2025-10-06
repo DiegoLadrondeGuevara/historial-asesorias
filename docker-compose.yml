@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  historial-asesorias:
+    build: .
+    container_name: historial-asesorias
+    ports:
+      - "8005:8000"
+    env_file:
+      - .env
